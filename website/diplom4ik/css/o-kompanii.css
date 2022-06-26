@@ -1,0 +1,353 @@
+.page-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.navigation-standalone+.fullwidth-block {
+    margin-top: 0!important;
+}
+
+.breadcrumbs-header {
+  position: relative;
+  color: #fff;
+  margin: 60px 0;
+}
+
+.breadcrumbs-header__background {
+  position: absolute;
+  left: calc((100vw - 100%)/2*-1);
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.breadcrumbs-header__background-image, .breadcrumbs-header__background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
+}
+
+.breadcrumbs-header__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 410px;
+  padding: 60px 0;
+}
+
+.breadcrumbs-header__breadcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.breadcrumbs-header__breadcrumbs-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-header__breadcrumbs-list-item::before {
+  content: '/';
+  font-size: 17px;
+  line-height: 23px;
+  color: currentColor;
+}
+
+.breadcrumbs-header__breadcrumbs-link:link, .breadcrumbs-header__breadcrumbs-link:visited {
+  color: #fff;
+}
+
+.breadcrumbs-header__breadcrumbs-link {
+  font-size: 17px;
+  line-height: 23px;
+  padding: 5px 8px;
+  display: block;
+}
+
+.breadcrumbs-header__heading {
+  font-size: 40px;
+}
+
+.about-company-detailed {
+    margin: 60px 0;
+}
+
+.about-company-detailed__block-heading {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #bababa;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.about-company-detailed__row {
+    display: flex;
+}
+
+.about-company-detailed__content-column {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.default-content, .default-content>h4 {
+    font-size: 20px;
+}
+
+.default-content>:first-child {
+    margin-top: 0;
+}
+
+.default-content>h1, .default-content>h2, .default-content>h3, .default-content>h4, .default-content>h5, .default-content>h6 {
+    margin-bottom: 0.5em;
+}
+
+.default-content>h2 {
+    font-size: 32px;
+}
+
+.default-content>blockquote {
+    padding-left: 32px;
+    display: block;
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.default-content>blockquote, .default-content>ol li {
+    position: relative;
+    font-family: "Proxima Nova",sans-serif;
+}
+
+.default-content>blockquote::before, .landing-node-text>blockquote::before, .partner-benefits__card>blockquote::before, .partner-candidate__content>blockquote::before {
+    content: '';
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 4px;
+    position: absolute;
+    background-color: #fb0d1b;
+}
+
+.default-content>:last-child, .default-content>ol li:last-child, .default-content>ul li:last-child {
+    margin-bottom: 0;
+}
+
+.default-content .p>p, .default-content p:not([class]), .default-content>p {
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+  display: block;
+}
+
+section {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+div {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+body {
+    background: #f6f5f7;
+    min-width: 320px;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.2;
+    overflow-y: scroll;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+    color: #fff;
+    background-color: #fb0d1b;
+}
+
+/*ДАЛЬШЕ CSS ДЛЯ МЕНЮ*/
+.menu {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  text-align: center;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  margin: 0 15px;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.menu li:hover a:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
+.menu li:nth-child(1) a {
+  animation: show 0.2s 1.1s ease 1 both;
+}
+
+.menu li:nth-child(2) a{
+  animation: show 0.2s 1.2s ease 1 both;
+}
+
+.menu li:nth-child(3) a{
+  animation: show 0.2s 1.3s ease 1 both;
+}
+
+.menu li:nth-child(4) a {
+  animation: show 0.2s 1.4s ease 1 both;
+}
+
+.menu li:nth-child(5) a {
+  animation: show 0.2s 1.5s ease 1 both;
+}
+
+.menu li:nth-child(6) a {
+  animation: show 0.2s 1.6s ease 1 both;
+}
+
+
+@keyframes in {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+@keyframes out {
+  0% {
+    width: 100%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
